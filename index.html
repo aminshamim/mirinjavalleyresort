@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirinja Valley Resort & Restaurant</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <nav class="bg-white border-gray-200">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#hero" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="images/logo.png" class="h-10 md:h-16" alt="Mirinja Valley Resort & Restaurant Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-green-800">Mirinja Valley Resort</span>
+        </a>
+        <button id="hamburger-btn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="nav-menu">
+          <ul id="menu-bar" class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+            <li><a href="#hero" class="block py-2 px-3 text-white bg-green-700 rounded-sm md:bg-transparent md:text-green-700 md:p-0" aria-current="page">Home</a></li>
+            <li><a href="#lodge" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Lodge</a></li>
+            <li><a href="#tours" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Tours</a></li>
+            <li><a href="#sustainability" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Sustainability</a></li>
+            <li><a href="#testimonials" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Testimonials</a></li>
+            <li><a href="#location" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Location</a></li>
+            <li><a href="#contact" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero" class="relative w-full min-h-[400px] md:min-h-[550px] flex items-center justify-center overflow-hidden rounded-b-3xl shadow-lg mb-8">
+        <img src="images/hero1.jpg" alt="Resort Hero" class="absolute top-0 left-0 w-full h-full object-cover brightness-75 z-0 select-none"/>
+        <div class="relative z-10 text-center max-w-2xl mx-auto px-4 py-16 md:py-24">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-white drop-shadow mb-4">Mirinja Valley Resort & Restaurant</h1>
+            <p class="text-lg md:text-2xl text-green-100 font-medium mb-8 drop-shadow">Come together in harmony with nature. Experience tranquility, adventure, and comfort in the heart of the hills.</p>
+            <a href="#contact" class="inline-block bg-green-700 text-white font-bold rounded-full px-8 py-3 text-lg shadow hover:bg-green-800 transition">Book Your Stay</a>
+        </div>
+    </section>
+    <!-- Lodge/Accommodations Section -->
+    <section id="lodge" class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-2xl md:text-4xl font-bold text-center text-green-800 mb-10">Our Lodge</h2>
+        <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+            <div class="bg-white rounded-xl shadow-lg p-6 w-full max-w-xs flex flex-col items-center hover:scale-105 transition">
+                <img src="images/cottage1.jpg" alt="Cottage" class="w-full h-40 object-cover rounded-lg mb-4"/>
+                <h3 class="text-lg font-semibold text-green-700 mb-2">Cottage</h3>
+                <p class="text-gray-600 text-center">Cozy, eco-friendly cottages with all modern amenities and a touch of tradition.</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 w-full max-w-xs flex flex-col items-center hover:scale-105 transition">
+                <img src="images/joom.jpg" alt="Jhumghor" class="w-full h-40 object-cover rounded-lg mb-4"/>
+                <h3 class="text-lg font-semibold text-green-700 mb-2">Jhumghor</h3>
+                <p class="text-gray-600 text-center">Experience the unique charm of our traditional Jhumghor huts, blending comfort and culture.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Tours/Experiences Section -->
+    <section id="tours" class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-2xl md:text-4xl font-bold text-center text-green-800 mb-10">Our Experiences</h2>
+        <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+            <div class="bg-white rounded-xl shadow-lg p-6 w-full max-w-xs flex flex-col items-center hover:scale-105 transition">
+                <img src="images/matamuhuri.jpg" alt="Matamuhuri River / Sadapathor" class="w-full h-40 object-cover rounded-lg mb-4"/>
+                <h3 class="text-lg font-semibold text-green-700 mb-2">Matamuhuri River / Sadapathor</h3>
+                <p class="text-gray-600 text-center">Crystal-clear river with scenic white stone beds.</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 w-full max-w-xs flex flex-col items-center hover:scale-105 transition">
+                <img src="images/falls.jpg" alt="Mirinja Falls" class="w-full h-40 object-cover rounded-lg mb-4"/>
+                <h3 class="text-lg font-semibold text-green-700 mb-2">Mirinja Falls</h3>
+                <p class="text-gray-600 text-center">A hidden waterfall surrounded by lush green hills.</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 w-full max-w-xs flex flex-col items-center hover:scale-105 transition">
+                <img src="images/shikhia.jpeg" alt="Sukhia Valley" class="w-full h-40 object-cover rounded-lg mb-4"/>
+                <h3 class="text-lg font-semibold text-green-700 mb-2">Sukhia Valley</h3>
+                <p class="text-gray-600 text-center">A serene valley offering panoramic hill views.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-2xl md:text-4xl font-bold text-center text-green-800 mb-10">Sustainability</h2>
+        <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+            <img src="images/eco.jpg" alt="Green Ethos" class="w-full max-w-xs h-80 object-cover rounded-lg shadow mb-4 md:mb-0"/>
+            <div class="max-w-xl">
+                <h3 class="text-lg font-semibold text-green-700 mb-2">Green Ethos</h3>
+                <p class="text-gray-600">We are committed to eco-friendly practices, social responsibility, and cultural preservation. Our resort blends harmoniously with nature, ensuring a sustainable future for all.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-2xl md:text-4xl font-bold text-center text-green-800 mb-10">Testimonials</h2>
+        <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+            <blockquote class="bg-green-50 border-l-4 border-green-700 p-6 rounded-lg shadow w-full max-w-md italic text-gray-700 mb-4 md:mb-0">
+                <p class="mb-2">"A magical place to reconnect with nature and yourself. Highly recommended!"</p>
+                <footer class="text-green-700 font-semibold">- Guest 1</footer>
+            </blockquote>
+            <blockquote class="bg-green-50 border-l-4 border-green-700 p-6 rounded-lg shadow w-full max-w-md italic text-gray-700">
+                <p class="mb-2">"The staff, the food, the views—everything was perfect. Will visit again!"</p>
+                <footer class="text-green-700 font-semibold">- Guest 2</footer>
+            </blockquote>
+        </div>
+    </section>
+    <!-- Location/Map Section -->
+    <section id="location" class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-2xl md:text-4xl font-bold text-center text-green-800 mb-10">Location</h2>
+        <div class="rounded-lg overflow-hidden shadow-lg w-full max-w-3xl mx-auto">
+            <iframe src="https://www.google.com/maps?q=Mirinja+Valley+Resort+%26+Restaurant&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="w-full h-72"></iframe>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-2xl md:text-4xl font-bold text-center text-green-800 mb-10">Contact Us</h2>
+        <!-- <form class="flex flex-col gap-4 max-w-md mx-auto mb-8 bg-white p-6 rounded-xl shadow">
+            <input type="text" name="name" placeholder="Your Name" required class="p-3 rounded border border-green-200 focus:outline-none focus:ring-2 focus:ring-green-400"/>
+            <input type="email" name="email" placeholder="Your Email" required class="p-3 rounded border border-green-200 focus:outline-none focus:ring-2 focus:ring-green-400"/>
+            <textarea name="message" placeholder="Your Message" required class="p-3 rounded border border-green-200 focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
+            <button type="submit" class="bg-green-700 text-white font-bold rounded px-6 py-3 hover:bg-green-800 transition">Send Message</button>
+        </form> -->
+        <div class="text-center text-green-900 space-y-1">
+            <p class="font-bold text-lg">মিরিঞ্জা ভ্যালী রিসোর্ট এন্ড রেস্টুরেন্ট</p>
+            <p>জুমঘর-কটেজ বুকিং</p>
+            <p>যোগাযোগ: <a href="tel:01881696862" class="text-green-700 underline hover:text-green-900">01881-696862</a> / <a href="tel:01878524035" class="text-green-700 underline hover:text-green-900">01878-524035</a></p>
+            <p>Page · Hotel resort</p>
+            <p>Bandarban, Chittagong Division, Bangladesh</p>
+            <p><a href="tel:01881696862" class="text-green-700 underline hover:text-green-900">01881-696862</a></p>
+            <p><a href="mailto:ziaurrahmanlama2000@gmail.com" class="text-green-700 underline hover:text-green-900">ziaurrahmanlama2000@gmail.com</a></p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white mt-12">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col items-center">
+            <img src="images/logo.png" alt="Mirinja Valley Resort & Restaurant Logo" class="mx-auto mb-3" style="height:auto; width:auto; max-width:100%;" />
+            <p class="mb-1">&copy; 2024 Mirinja Valley Resort & Restaurant. All rights reserved.</p>
+            <p class="mb-2 text-xs">Photo credits: Unsplash</p>
+            <div class="flex gap-4 mt-2">
+                <a href="https://www.facebook.com/profile.php?id=100065325136724" target="_blank" aria-label="Facebook" class="bg-white text-green-700 rounded-full p-2 hover:bg-green-100 transition">
+                    <!-- Facebook SVG Icon -->
+                    <svg width="28" height="28" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 0H3C1.343 0 0 1.343 0 3v26c0 1.657 1.343 3 3 3h13V20h-4v-5h4v-3.5C16 8.57 18.239 6 21.5 6c1.09 0 2.5.18 2.5.18v4h-1.41C21.36 10.18 21 10.94 21 11.75V15h5l-1 5h-4v12h6c1.657 0 3-1.343 3-3V3c0-1.657-1.343-3-3-3z"/>
+                    </svg>
+                </a>
+                <a href="https://wa.me/8801881696862" target="_blank" aria-label="WhatsApp" class="bg-white text-green-700 rounded-full p-2 hover:bg-green-100 transition">
+                    <!-- WhatsApp SVG Icon -->
+                    <svg width="28" height="28" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2.938c-7.364 0-13.344 5.98-13.344 13.344 0 2.355.617 4.646 1.789 6.664L2 30l7.273-2.383c1.945 1.07 4.145 1.637 6.383 1.637h.006c7.364 0 13.344-5.98 13.344-13.344S23.364 2.938 16 2.938zm6.945 18.945c-.297.836-1.742 1.617-2.406 1.719-.617.094-1.406.133-2.273-.141-.523-.164-1.195-.391-2.07-.766-3.633-1.57-6.008-5.418-6.195-5.68-.18-.258-1.48-1.973-1.48-3.77 0-1.797.938-2.68 1.273-3.047.336-.367.734-.461.977-.461.242 0 .484.004.695.012.227.008.523-.086.82.625.297.711 1.008 2.461 1.094 2.641.086.18.141.398.027.656-.117.258-.18.414-.352.633-.172.219-.367.484-.523.648-.172.18-.352.375-.152.734.203.367.906 1.5 1.945 2.43 1.336 1.188 2.461 1.555 2.828 1.734.367.18.578.156.789-.094.211-.25.906-1.055 1.148-1.422.242-.367.484-.305.82-.18.336.125 2.133 1.008 2.5 1.188.367.18.609.273.695.43.086.156.086.898-.211 1.734z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/flowbite@2.2.1/dist/flowbite.min.js"></script>
+</body>
+</html> 
